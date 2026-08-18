@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo NORP — Soluções que constroem</title>
+<meta name="description" content="Grupo NORP: um grupo de empresas que atuam em diferentes segmentos, unidas pelo propósito de gerar valor, inovação e impacto positivo na vida das pessoas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="logo" aria-label="página inicial">
+      <svg class="logo__symbol" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+        <path d="M6 33V17L13 12V33" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M13 33V8L20 3L27 8V33" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M27 33V13L34 17V33" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M4 33H36" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M16 33V26H24V33" stroke="var(--gold)" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__name js-cursor-text">GERMANO</span>
+        <span class="logo__slogan">Engenheiro Civil</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link nav__link--active">Início</a></li>
+        <li><a href="#empresas" class="nav__link " aria-current="page">Empresas</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#empresas" class="nav__link">Serviços</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/553299552892" class="btn btn--primary btn--header" target="_blank" rel="noopener noreferrer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.3 8.3 0 0 1-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.21 8.28-8.21m-4.53 4.72c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.72 4.2 3.7 2.08.82 2.5.66 2.95.62.45-.04 1.46-.6 1.66-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.24-.64.8-.78.97-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.56-1.36-.78-1.86-.2-.48-.4-.42-.56-.43z"/></svg>
+      FALE CONOSCO
+    </a>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar modo claro" aria-pressed="false">
+      <svg class="theme-toggle__icon theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <svg class="theme-toggle__icon theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Navegação mobile">
+  <button class="mobile-menu__close" id="mobileMenuCloseBtn" aria-label="Fechar menu de navegação">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <ul class="mobile-menu__list">
+    <li><a href="#inicio" class="mobile-menu__link mobile-menu__link--active">Início</a></li>
+    <li><a href="#empresas" class="mobile-menu__link ">Empresas</a></li>
+    <li><a href="#sobre" class="mobile-menu__link">Sobre</a></li>
+    <li><a href="#empresas" class="mobile-menu__link">Serviços</a></li>
+    <li><a href="#contato" class="mobile-menu__link">Contato</a></li>
+  </ul>
+  <a href="https://wa.me/553299552892" class="btn btn--primary btn--full" target="_blank" rel="noopener noreferrer">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.3 8.3 0 0 1-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.21 8.28-8.21m-4.53 4.72c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.72 4.2 3.7 2.08.82 2.5.66 2.95.62.45-.04 1.46-.6 1.66-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.24-.64.8-.78.97-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.56-1.36-.78-1.86-.2-.48-.4-.42-.56-.43z"/></svg>
+    FALE CONOSCO
+  </a>
+</nav>
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+<main id="conteudo">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img class="hero__bg-img hero__bg-img--dark" src="assets/hero/ImagemFundoHero.jpeg" alt="" aria-hidden="true">
+      <img class="hero__bg-img hero__bg-img--light" src="assets/hero/ImagemFundoHeroLight.jpeg" alt="" aria-hidden="true">
+    </div>
+    <div class="hero__vignette" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow reveal js-cursor-text" data-delay="0">LIDERANÇA <span aria-hidden="true">•</span> VISÃO <span aria-hidden="true">•</span> RESULTADOS</p>
+        <h1 class="hero__title reveal" data-delay="120">
+          Transformando<br>
+          ideias em negócios<br>
+          <span class="text-gold">que constroem o futuro.</span>
+        </h1>
+        <p class="hero__subtext reveal" data-delay="240">
+          Somos um grupo de empresas que atuam em diferentes segmentos, unidas pelo propósito de gerar valor, inovação e impacto positivo na vida das pessoas.
+        </p>
+        <div class="hero__ctas reveal" data-delay="360">
+          <div class="logo-carousel" role="region" aria-label="Empresas do Grupo">
+            <div class="logo-carousel__track" id="logoCarouselTrack"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__portrait">
+        <img src="assets/cliente/ImagemCliente1-cropped.png" alt="Executivo do Grupo NORP" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EMPRESAS ===================== -->
+  <section class="companies" id="empresas">
+    <div class="container">
+      <div class="section-heading section-heading--center reveal">
+        <p class="eyebrow js-cursor-text">NOSSAS EMPRESAS</p>
+        <h2 class="section-title">Conheça as empresas<br>que fazem parte do nosso grupo.</h2>
+      </div>
+
+      <div class="companies__grid">
+
+        <article class="company-card reveal" data-delay="0">
+          <div class="company-card__icon company-card__icon--logo" aria-hidden="true">
+            <img src="assets/empresas/Empresa1.jpeg" alt="">
+          </div>
+          <h3 class="company-card__name js-cursor-text">Sondartech Geotecnia</h3>
+          <p class="company-card__category js-cursor-text">Geotecnia</p>
+          <p class="company-card__desc">Sondagens e investigações geotécnicas especializadas para fundações seguras e projetos de engenharia.</p>
+          <a href="#contato" class="company-card__link">SAIBA MAIS <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="company-card reveal" data-delay="80">
+          <div class="company-card__icon company-card__icon--logo" aria-hidden="true">
+            <img src="assets/empresas/Empresa4.jpeg" alt="">
+          </div>
+          <h3 class="company-card__name js-cursor-text">M.G.S. Empreendimentos</h3>
+          <p class="company-card__category js-cursor-text">Empreendimentos Imobiliários</p>
+          <p class="company-card__desc">Empreendimentos imobiliários planejados com excelência, unindo infraestrutura, mobilidade e qualidade de vida.</p>
+          <a href="#contato" class="company-card__link">SAIBA MAIS <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="company-card reveal" data-delay="160">
+          <div class="company-card__icon company-card__icon--logo" aria-hidden="true">
+            <img src="assets/empresas/Empresa2.jpeg" alt="">
+          </div>
+          <h3 class="company-card__name js-cursor-text">Tactical Store RP</h3>
+          <p class="company-card__category js-cursor-text">Equipamentos Táticos</p>
+          <p class="company-card__desc">Loja especializada em equipamentos táticos e acessórios para esportistas e profissionais de segurança.</p>
+          <a href="#contato" class="company-card__link">SAIBA MAIS <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="company-card reveal" data-delay="0">
+          <div class="company-card__icon company-card__icon--logo" aria-hidden="true">
+            <img src="assets/empresas/Empresa3.jpeg" alt="">
+          </div>
+          <h3 class="company-card__name js-cursor-text">RGM Associados</h3>
+          <p class="company-card__category js-cursor-text">Projetos e Imóveis</p>
+          <p class="company-card__desc">Assessoria completa em projetos e imóveis, conectando oportunidades a quem busca investir com segurança.</p>
+          <a href="#contato" class="company-card__link">SAIBA MAIS <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="company-card reveal" data-delay="80">
+          <div class="company-card__icon company-card__icon--logo" aria-hidden="true">
+            <img src="assets/empresas/Empresa5.jpeg" alt="">
+          </div>
+          <h3 class="company-card__name js-cursor-text">Academia de Tiro de Rio Pomba</h3>
+          <p class="company-card__category js-cursor-text">Academia de Tiro</p>
+          <p class="company-card__desc">Estrutura completa para treinamento, cursos e prática esportiva de tiro com segurança e qualidade.</p>
+          <a href="#contato" class="company-card__link">SAIBA MAIS <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="company-card reveal" data-delay="160">
+          <div class="company-card__icon company-card__icon--logo" aria-hidden="true">
+            <img src="assets/empresas/Empresa6.png" alt="">
+          </div>
+          <h3 class="company-card__name js-cursor-text">CasaPro</h3>
+          <p class="company-card__category js-cursor-text">Engenharia & Arquitetura</p>
+          <p class="company-card__desc">Projetos de engenharia e arquitetura que unem técnica, estética e funcionalidade em cada empreendimento.</p>
+          <a href="#contato" class="company-card__link">SAIBA MAIS <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INDICADORES ===================== -->
+  <section class="stats" aria-label="Indicadores do Grupo NORP">
+    <div class="container stats__grid">
+      <div class="stat reveal" data-delay="0">
+        <svg class="stat__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="3" stroke="var(--gold)" stroke-width="1.6"/><circle cx="17" cy="9" r="2.4" stroke="var(--gold)" stroke-width="1.6"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 20c0-2.6-.8-4.8-2.2-6.3.8-.5 1.7-.7 2.7-.7 2.9 0 5.3 2.4 5.3 5.3" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="stat__number">6</span>
+        <p class="stat__label js-cursor-text">EMPRESAS DO GRUPO</p>
+      </div>
+      <div class="stat reveal" data-delay="80">
+        <svg class="stat__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2" stroke="var(--gold)" stroke-width="1.6"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="stat__number">+150</span>
+        <p class="stat__label js-cursor-text">PROJETOS REALIZADOS</p>
+      </div>
+      <div class="stat reveal" data-delay="160">
+        <svg class="stat__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 8.7-8 11-4.6-2.3-8-6-8-11V5z" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5L16 9" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="stat__number">100%</span>
+        <p class="stat__label js-cursor-text">COMPROMISSO COM A QUALIDADE</p>
+      </div>
+      <div class="stat reveal" data-delay="240">
+        <svg class="stat__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="6" stroke="var(--gold)" stroke-width="1.6"/><path d="M8.5 13.5 7 22l5-2.5L17 22l-1.5-8.5" stroke="var(--gold)" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span class="stat__number">+10</span>
+        <p class="stat__label js-cursor-text">ANOS DE EXPERIÊNCIA EM SOLUÇÕES</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="about" id="sobre">
+    <div class="about__grid">
+      <div class="about__image reveal">
+        <img src="assets/cliente/ImagemCliente2.jpeg" alt="Germano RP, fundador e CEO do Grupo NORP, sentado em ambiente corporativo com iluminação cinematográfica">
+      </div>
+      <div class="about__content">
+        <div class="container about__content-inner">
+          <p class="eyebrow reveal js-cursor-text">SOBRE</p>
+          <h2 class="section-title reveal">Por trás de <span class="text-gold">grandes negócios</span></h2>
+          <p class="about__text reveal">Acredito que grandes negócios são construídos com visão, disciplina e propósito. Ao longo da minha jornada, desenvolvi empresas em diferentes segmentos para atender necessidades reais do mercado e gerar impacto positivo na vida das pessoas.</p>
+          <p class="about__text reveal">Meu compromisso é com resultados sustentáveis, inovação constante e relacionamentos sólidos.</p>
+          <div class="about__signature reveal">
+            <p class="signature-script js-cursor-text">Germano</p>
+            <p class="signature-role">FUNDADOR E CEO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta-final" id="contato">
+    <div class="container cta-final__inner">
+      <div class="cta-final__icon reveal" aria-hidden="true">
+        <span class="cta-final__diamond">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.3 8.3 0 0 1-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.21 8.28-8.21m-4.53 4.72c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.72 4.2 3.7 2.08.82 2.5.66 2.95.62.45-.04 1.46-.6 1.66-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.24-.64.8-.78.97-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.56-1.36-.78-1.86-.2-.48-.4-.42-.56-.43z"/></svg>
+        </span>
+      </div>
+      <div class="cta-final__content reveal">
+        <h2 class="cta-final__title js-cursor-text">VAMOS CONSTRUIR ALGO GRANDE JUNTOS?</h2>
+        <p class="cta-final__text">Entre em contato e descubra como o Grupo NORP pode transformar suas ideias em realidade.</p>
+      </div>
+      <a href="https://wa.me/553299552892" class="btn btn--primary btn--large cta-final__btn reveal" target="_blank" rel="noopener noreferrer">
+        FALE CONOSCO
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.3 8.3 0 0 1-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.21 8.28-8.21m-4.53 4.72c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.72 4.2 3.7 2.08.82 2.5.66 2.95.62.45-.04 1.46-.6 1.66-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.24-.64.8-.78.97-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.56-1.36-.78-1.86-.2-.48-.4-.42-.56-.43z"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#inicio" class="logo" aria-label="Grupo NORP — página inicial">
+        <svg class="logo__symbol" width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+          <path d="M6 33V17L13 12V33" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M13 33V8L20 3L27 8V33" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M27 33V13L34 17V33" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M4 33H36" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__name js-cursor-text">GERMANO</span>
+          <span class="logo__slogan">SOLUÇÕES QUE CONSTROEM</span>
+        </span>
+      </a>
+      <p class="footer__desc">Unimos empresas, pessoas e propósito para construir um futuro melhor.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/germanorp?igsh=NHVuazAyd2FubDY=" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://wa.me/553299552892" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.3 8.3 0 0 1-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.32a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.21 8.28-8.21m-4.53 4.72c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.7 2.72 4.2 3.7 2.08.82 2.5.66 2.95.62.45-.04 1.46-.6 1.66-1.17.2-.58.2-1.08.14-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.24-.64.8-.78.97-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.56-1.36-.78-1.86-.2-.48-.4-.42-.56-.43z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__col-title js-cursor-text">Links Rápidos</h3>
+      <ul class="footer__list">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#empresas">Empresas</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#empresas">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__col-title js-cursor-text">Segmentos</h3>
+      <ul class="footer__list">
+        <li><a href="#empresas">Engenharia</a></li>
+        <li><a href="#empresas">Arquitetura</a></li>
+        <li><a href="#empresas">Clube de Tiro</a></li>
+        <li><a href="#empresas">Consultoria</a></li>
+        <li><a href="#empresas">Serviços</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>&copy; 2026 Germano. Todos os direitos reservados.</p>
+      <p>Desenvolvido com excelência para construir o futuro.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
